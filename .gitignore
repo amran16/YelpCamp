@@ -1,2 +1,3 @@
 node_modules
 *.log
+//mongoose.connect("mongodb://yelp:abc@ds143000.mlab.com:43000/yelpcamp")

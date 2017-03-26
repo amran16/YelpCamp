@@ -13,3 +13,17 @@
 #delete-form {
     display: inline;
 }
+
+.center{
+  margin: 0 auto;
+}
+
+#size{
+  width: 50%;
+  height: 50%;
+}
+
+.image{
+  width: 375px;
+  height: 200px;
+}
