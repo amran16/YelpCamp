@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 var express     = require("express"),
     app         = express(),
     bodyParser  = require("body-parser"),
@@ -18,7 +20,7 @@ var commentRoutes    = require("./routes/comments"),
 
 mongoose.Promise = global.Promise;
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/yelp_camp_v10");
-//mongodb://<yelpcamp>:<abc>@ds143000.mlab.com:43000/yelpcamp
+//mongoose.connect("mongodb://yelp:abc@ds143000.mlab.com:43000/yelpcamp")
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
